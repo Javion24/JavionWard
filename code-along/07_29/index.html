@@ -14,11 +14,22 @@
 </head>
 <body>
     <!--Collaspe-->
-    <div class="collaspe fixed-top bg-dark" id="mobileNavbar">
-        <div class="container mobile-menu-wrapper">
-        
+<div class="collaspe fixed-top bg-dark" id="mobileNavbar">
+    <div class="container mobile-menu-wrapper">
+        <div class="row">
+            <div class="col">
+                <ul class="list-group mt-5 text-right">
+                    <li class="list-group-item bg-dark border-0">
+                        <a href="#emojis">Emojis</a>
+                    </li>
+                    <li class="list-group-item bg-dark border-0">
+                        <a href="#alerts">Alerts</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+</div>
     
 <!--Navbar-->
 		<nav class="navbar fixed-top navbar-dark bg-dark">
@@ -27,7 +38,7 @@
         </a>
 
         <!--Mobile-->
-        <button class="navbar-toggler" data-toggle="collaspe"
+        <button class="navbar-toggler" data-toggle="collapse"
         data-target="#mobileNavbar">
         <i class="fas fa-bars"></i>
         </button>
@@ -86,16 +97,28 @@
             </div>
 					</div>
 
-					<!--Alerts-->
-					<div id="alerts" class="row">
-						<h2 class="Section-header">Alerts</h2>
-					</div>
-					<div class="alert alert-primary alert-dismissable fade show" role="alert">
-						<strong>.alert-primary</strong>
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<!--Alerts-->
+		<div id="alerts" class="row">
+		<h2 class="Section-header">Alerts</h2>
+		</div>
+		<div class="alert alert-primary alert-dismissable fade show" role="alert">
+		    <strong>.alert-primary</strong>
+		    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-					</div>
+			</div>
+        <div class="alert alert-danger alert-dismissable fade show" role="alert">
+		    <strong>.alert-danger</strong>
+		    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+			</div>
+        <div class="alert alert-success alert-dismissable fade show" role="alert">
+		    <strong>.alert-sucess</strong>
+		    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+			</div>
 
 					<!--Carousel-->
 
