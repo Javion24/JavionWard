@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Favorite Animal</title>
+    <!--This is an internal stylesheet-->
+    <!--This is an internal stylesheet-->
+    <style>
+    #image{
+        width: 200px;
+        animation: spin 3s;
+    }
+
+    body{
+        background:linear-gradient(to bottom left,red,white);
+        font-size: 15px;
+        font-family:cursive, Arial;
+    }
+
+    .firstparagraph{
+        border: dashed 1px black;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #secondparagraph{
+        border: dashed 1px black;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .span1{
+        font-weight: 700;
+    }
+
+    @keyframes spin{
+        from{
+            transform: rotate(0deg)
+        }
+
+        to{
+            transform:rotate(360deg)
+        }
+    }
+    </style>
+</head>
+<body>
+    <h2>Lions</h2>
+    <div class="firstparagraph">
+    <p>The lion is a species in the family Felidae and a member of the genus Panthera.<span class="span1"> It is most recognisable for its muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.</span> It is sexually dimorphic; adult male lions have a prominent mane.</p>
+    <hr>
+    </div>
+    <hr>
+    <div id="secondparagraph">
+    <p>Lions are my favorite animal because I like them.</p>
+    </div>
+    <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/E0F0/production/_112548575_gettyimages-492611032-1.jpg"alt="Lion" id="image"/>
+</body>
+</html>
+
