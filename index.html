@@ -18,13 +18,13 @@
                 <div class="col">
                     <ul class="list-group mt-5 text-right">
                         <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
-                            <a href="#keyskills">Key Skills</a>
+                            <a href=".keyskills">Key Skills</a>
                         </li>
                         <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
-                            <a href="#softskills">Soft Skills</a>
+                            <a href=".softskills">Soft Skills</a>
                         </li>
                         <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
-                            <a href="#personalattributes">Personal Attributes</a>
+                            <a href=".personalattributes">Personal Attributes</a>
                         </li>
                         <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
                             <a href="#careertrajectory">Career Trajectory</a>
@@ -43,9 +43,13 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-dark bg-dark">
             <a href="#" class="navbar-brand">
                 <img height="40" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSi2l1uXiEyOarn3aYZKiAIFGekxnn_YD_BA&usqp=CAU" alt="">
             </a>
@@ -77,93 +81,31 @@
                     <a href="#contactinformation" class="nav-link active">Contact Information</a>
                 </li>
             </ul>
-    </nav>
+        </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2 class="section-header">Opening Statement</h2>
-                <p>My name is Javion Ward and I'm 16 years old.
-                I live in Detroit,MI and I was born here also.
-                I go to Renaissance High School and in the fall i'll be a junior.
-                My favorite subject is math because I'm really good at it.
-                Some things I like to do is play video games and playing basketball.</p>
+        <!-- Cards -->
+        <div id="cards" class="row">
+            <h2 class="section-header">Cards</h2>
+        </div>
+        <div class="row justify-content-center mt-5" >
+            <div class="col-xs-10 col-sm-6 mb-5">
+                <div class="card" style="width: auto;">
+                    <div class="card-header">Accountant</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNpAcBbDMe-AogkkXYCtPYweMpFq5JOSJkCg&usqp=CAU" 
+                    class="card-img-top" 
+                    alt="Accountant">
+                    <div class="card-body">
+                        <h3 class="card-title">Javion Ward</h3>
+                        <h5>16</h5>
+                        <h5>Accountant</h5>
+                        <a href="infopage.html" class="btn btn-primary">More Info Here</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col">
-                <h2 class="section-header">Key Skills</h2>
-                <ul>
-                    <li> Typing skills</li>
-                    <li> Coding </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="section-header">Soft Skills</h2>
-                <ul>
-                    <li>Hardworking</li>
-                    <li> Teamwork </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="section-header">Personal Attributes</h2>
-                <ol>
-                    <li> Intelligent </li>
-                    <li> Helpful</li>
-                    <li> Nice</li>
-                </ol>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="section-header">Career Trajectory</h2>
-                <p>In 5 years I see myself in college at Michigan State University.
-                I will be majoring in accounting and minoring in business.
-                I will get there by graduating highschool and hopefully getting a scholarship to MSU.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="section-header">Educational Qualifications</h2>
-                <ul>
-                    <li>Renaissance High School</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="section-header">Employment History</h2>
-                <ol>
-                    <li>GDYT Journi-2020</li>
-                    <li>Math Corps-2020</li>
-                    <li>Math Corps-2019</li>
-                    <li>GDYT-2018</li>
-                </ol>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="section-header">Contact Information</h2>
-                <form>
 
-                <input type="Email">Email</input>
-                </form>
-                <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+        
+</body>
+        
 
-                <button id="button">Submit</button>
-            </div>
-        </div>
-    </div>
-
-            <a href="index.html" class="btn btn-primary">Back To Home Page</a>
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-    </body>
-    </html>
+    
